@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groco</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style2.css">
@@ -20,17 +20,17 @@
         <div class="header-2">
 
             <div id="menu-bar" class="fas fa-bars"></div>
-
+            <a href="./index.html" class="logo"><img src="./assets/img/logo_food.png" width="110" height="90" alt=""></a>
             <nav class="navbar">
-                <a href="/">home</a>
+                <a href="./index.html">home</a>
                 <a href="#category">category</a>
                 <a href="#forum">forum</a>
                 <a href="#contact">contact</a>
             </nav>
 
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-user-circle"></a>
+                <a href="#" class="fas fa-heart" data-tooltip="Favorite recipes"></a>
+                <a href="#" class="fas fa-user-circle"data-tooltip="Authorization"></a>
             </div>
 
         </div>
@@ -41,7 +41,7 @@
     <section class="home" id="home">
 
         <div class="image">
-            <img src="/assets/img/home-img.png" alt="">
+            <img src="./assets/img/home-img.png" alt="">
         </div>
 
         <div class="content">
@@ -143,6 +143,15 @@
 
         <div class="box-container">
 
+            <div class="box">
+                <h3>our contacts:</h3>
+                <div class="share">
+                    <a href="#" class="btn"><img src="./assets/img/instagram.png" alt=""></a>
+                    <a href="#" class="btn"><img src="./assets/img/facebook.png" alt=""></a>
+                    <a href="#" class="btn"><img src="./assets/img/whatsapp.png" alt=""></a>
+                    <a href="#" class="btn"><img src="./assets/img/youtube.png" alt=""></a>
+                </div>
+            </div>
 
             <div class="box">
                 <h3>quick links</h3>
@@ -162,7 +171,7 @@
 
     <!-- footer section ends -->
 
-    <script src="/assets/js/cart.js"></script>
+    <script src="./assets/js/cart.js"></script>
 </body>
 
 </html>
