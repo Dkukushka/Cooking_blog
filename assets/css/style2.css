@@ -69,6 +69,27 @@ section {
     padding: 2rem 9%;
 }
 
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 200px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: var(--green);
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+    font-size: 20px;
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
 .logo {
     color: var(--black);
     font-weight: bolder;
@@ -488,10 +509,15 @@ section {
     margin-top: 0;
 }
 
+.footer{
+    background-color: rgb(39, 37, 37);
+    height: 200px;
+}
 .footer .box-container {
     display: flex;
-    /* gap: 1.5rem; */
-    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    
     
 }
 
@@ -502,17 +528,19 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 4%;
 }
 
 
 .footer .box-container .box h3 {
     font-size: 2.5rem;
-    color: var(--black);
+    color: #eee;
 }
 
 .footer .box-container .box p {
     font-size: 1.3rem;
-    color: #666;
+    color: #eee;
     padding: .7rem 0;
 }
 
@@ -520,17 +548,24 @@ section {
     padding: 1rem 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
    
+}
+.footer .share a{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .footer .box-container .box .links a {
     display: block;
     padding: .5rem 0;
     font-size: 1.7rem;
-    color: #333;
+    color: #eee;
     padding-right: 20px;
     padding-left: 20px;
+   
 }
 
 .footer .box-container .box .links a:hover {
